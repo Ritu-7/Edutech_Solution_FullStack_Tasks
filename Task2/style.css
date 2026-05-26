@@ -1,0 +1,82 @@
+/* Mobile First Design */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flexbox Navigation */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background: #444;
+}
+
+.navbar a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: #666;
+}
+
+/* CSS Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+/* Tablet View */
+@media (min-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
