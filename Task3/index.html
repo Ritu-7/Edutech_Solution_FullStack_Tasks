@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutech Solution - User Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>User Management Hub</h1>
+            <p class="subtitle">Task 3: Interactive UI with JavaScript (DOM Manipulation)</p>
+        </header>
+
+        <main>
+            <section class="controls-section">
+                <div class="card">
+                    <h3>Add New User</h3>
+                    <form id="userForm">
+                        <div class="form-group">
+                            <input type="text" id="userName" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="userEmail" placeholder="Email Address" required>
+                        </div>
+                        <button type="submit">Add User</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <h3>Filter Directory</h3>
+                    <div class="form-group">
+                        <input type="text" id="searchBar" placeholder="Search by name or email...">
+                    </div>
+                    <p class="subtitle stats-text">
+                        Total Users: <span id="userCount">0</span>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="list-header">
+                    <h3>User Directory</h3>
+                </div>
+                <ul id="userList" class="user-list">
+                    </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
